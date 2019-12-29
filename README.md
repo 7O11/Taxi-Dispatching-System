@@ -2,7 +2,7 @@
 
 ## input
 
-* File input: "Load [^filename]".
+* File input: "Load filename", filename is the path of input file.
 
 * Passenger request input: "[CR,(srcx,srcy),(dstx,dsty)]"，0<=srcx,srcy,dstx,dsty<=79.
 
@@ -57,11 +57,3 @@ The results of each command, and error information.
 ## Liskov Substitution Principle
 
 The SpecialTaxi class inherits the Taxi class, but only records the service information of the car on the original basis and backs up the initial map accordingly, so that the super taxi can walk the road that is closed behind. Replacing any place where Taxi appears with the corresponding SpecialTaxi class will not destroy the behavior of the program, it is just an upgrade of a regular taxi into a super taxi, which is in line with the LSP principle.
-
-
-
-
-
-
-
-[^filename]: path of your file
